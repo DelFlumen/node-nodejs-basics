@@ -1,4 +1,4 @@
-import { Worker, isMainThread, workerData } from "worker_threads";
+import { Worker, isMainThread } from "worker_threads";
 import * as os from "os";
 
 const performCalculations = async () => {
