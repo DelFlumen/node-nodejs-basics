@@ -33,10 +33,6 @@ const performCalculations = async () => {
       .catch((err) => {
         console.error("Error:", err);
       });
-  } else {
-    console.log(workerData);
-    console.log("Inside Worker!");
-    console.log(isMainThread); // Prints 'false'.
   }
 };
 

@@ -11,7 +11,7 @@ const sendResult = () => {
     try {
       const calcResult = nthFibonacci(workerData);
 
-      // Send the result back to the main thread
+      // Send the message back to the main thread
       parentPort.postMessage({
         status: "resolved",
         data: calcResult,
