@@ -1,6 +1,6 @@
 import { spawn } from "child_process";
 
-const spawnChildProcess = async (args) => {
+const spawnChildProcess = (args) => {
   // Spawn child process
   const child = spawn("node", ["./src/cp/files/script.js", ...args], {
     // Apply pipe to stdin and pipe to stdout, use IPC for stdin and stdout
